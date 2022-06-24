@@ -1,27 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import space from "../../assets/space.jpeg";
 import "./SideBarLeft.css";
+import Icon from "./SBLcomponents/Icon";
 
 function SideBarLeft(props) {
-  const [hover, setHover] = useState(false);
-
   return (
-    <div class="SBLcontainer">
-      <div className="SBLiconContainer">
-        <div className="SBLactive"></div>
-        <img
-          src={space}
-          alt=""
-          className="SBLimage"
-          onMouseEnter={() => {
-            setHover(true);
-          }}
-        />
-      </div>
-      <img src={space} alt="" className="SBLimage" />
-      <img src={space} alt="" className="SBLimage" />
-      <img src={space} alt="" className="SBLimage" />
-      <img src={space} alt="" className="SBLimage" />
+    <div className="SBLcontainer">
+      <Icon source={space} serverName={"Space"} />
+      <Icon source={space} serverName={"Fitness"} />
+      <Icon source={space} serverName={"Beer"} />
+      <Icon source={space} serverName={"Teste"} />
+      <Icon source={space} serverName={"Welcome"} />
     </div>
   );
 }
