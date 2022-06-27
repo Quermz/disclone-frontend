@@ -20,7 +20,9 @@ function Icon(props) {
       <img
         src={props.source}
         alt="serverIcon"
-        className={`SBLimage ${hover ? "SBLimageHover" : ""}`}
+        className={`SBLimage ${hover ? "SBLimageHover" : ""} ${
+          currentServer === props.serverName ? "SBLimageHover" : ""
+        }`}
         onMouseEnter={() => {
           setHover(true);
         }}

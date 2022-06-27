@@ -1,0 +1,27 @@
+.SIcontainer{
+  height: 100vh;
+  background-color: #2c2f33;
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.SIserverName{
+  
+  color: snow;
+  padding: 1rem;
+  border-bottom: #191c1e 1px solid;
+  font-size: 1rem;
+  height: 3rem;
+  box-sizing: border-box;
+
+}
+
+.SIusername{
+  background-color: #202326;
+  color: snow;
+  padding: 1rem;
+}

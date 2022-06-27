@@ -1,3 +1,8 @@
+.SBLouterContainer{
+  display: flex;
+}
+
+
 
 .SBLcontainer{
   margin: 0px;
@@ -23,10 +28,10 @@
 .SBLactive {
   background-color: white;
   width: 4px;
-  height: 0rem; 
+  height: 1rem; 
   border-radius: 0px 5px 5px 0px;
   transition: all 0.25s;
-  opacity: 0.8;
+  opacity: 0;
 }
 
 .SBLactiveHover{
@@ -40,6 +45,7 @@
 }
 
 .SBLimage {
+  
   height: 3.5rem;
   width: 3.5rem;
   object-fit: cover;
@@ -63,14 +69,17 @@
 
 .SBLspeechBubbleHover{
   display: flex;
+  z-index: 1;
+
 }
 
 .SBLserverName{
   color: #F6F6F6;
-  background: #23272A;
+  background: #000000;
   margin-left: 0.5rem;
   padding: 0.75rem;
   border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -79,7 +88,7 @@
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 6px solid #23272A;
+  border-bottom: 6px solid #000000;
   
   transform: translate(10px) rotate(270deg);
 }
