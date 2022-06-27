@@ -2,8 +2,6 @@
   display: flex;
 }
 
-
-
 .SBLcontainer{
   margin: 0px;
   display: flex;
@@ -58,12 +56,11 @@
 }
 
 .SBLspeechBubble{
+  margin: -5px;
   max-height: 2rem;
   flex-direction: row;
   align-items: center;
-  gap: 0px;
   display: none;
-  margin-left: -3px;
 }
 
 .SBLspeechBubbleHover{

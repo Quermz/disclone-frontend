@@ -14,7 +14,7 @@ function SideBarLeft(props) {
         <Icon source={space} serverName={"Test"} />
         <Icon source={space} serverName={"Welcome"} />
       </div>
-      <ServerInfo></ServerInfo>
+      <ServerInfo serverInfo={{ serverName: "test" }} />
     </div>
   );
 }
